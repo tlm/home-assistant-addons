@@ -1,6 +1,6 @@
 {
   "name": "Traefik",
-  "version": "4.0.11",
+  "version": "4.0.12",
   "slug": "traefik",
   "description": "Traefik is a modern HTTP reverse proxy and load balancer that makes deploying microservices easy.",
   "arch": ["armhf", "armv7", "amd64", "aarch64", "i386"],
@@ -11,12 +11,14 @@
   "ports": {
     "80/tcp": 80,
     "443/tcp": 443,
-    "8883/tcp": 8883
+    "8883/tcp": 8883,
+    "8884/tcp": 8884
   },
   "ports_description": {
     "80/tcp": "HTTP",
     "443/tcp": "HTTPS",
-    "8883/tcp": "MQTT"
+    "8883/tcp": "MQTT",
+    "8884/tcp": "MQTTWS"
   },
   "ingress": true,
   "ingress_entry": "dashboard/",
