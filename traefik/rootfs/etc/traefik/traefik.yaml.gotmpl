@@ -16,6 +16,8 @@ entryPoints:
     forwardedHeaders:
       insecure: {{ $options.forwarded_headers_insecure }}
 {{- end }}
+  mqtt:
+    address: ":8883"
 
 api:
   dashboard: true
