@@ -32,7 +32,7 @@ certificatesResolvers:
       email: "{{ $options.letsencrypt.email }}"
       storage: "/ssl/traefik/acme.json"
   {{- if has $options.letsencrypt "keyType" }}
-      keyType: {{ $options.letsencrypt.keyType }}
+      keyType: '{{ $options.letsencrypt.keyType }}'
   {{- end }}
   {{- if or (not (has $options.letsencrypt "challenge_type")) (eq $options.letsencrypt.challenge_type "tlsChallenge") }}
       tlsChallenge: {}
