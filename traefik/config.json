@@ -1,6 +1,6 @@
 {
   "name": "Traefik",
-  "version": "4.0.12",
+  "version": "4.0.13",
   "slug": "traefik",
   "description": "Traefik is a modern HTTP reverse proxy and load balancer that makes deploying microservices easy.",
   "arch": ["armhf", "armv7", "amd64", "aarch64", "i386"],
@@ -48,7 +48,8 @@
       "challenge_type": "match(tlsChallenge|httpChallenge|dnsChallenge)?",
       "provider": "str?",
       "delayBeforeCheck": "int?",
-      "resolvers": ["str?"]
+      "resolvers": ["str?"],
+      "keyType": "match(EC256|EC384|RSA2048|RSA4096|RSA8192)?"
     },
     "env_vars": ["str"]
   }
